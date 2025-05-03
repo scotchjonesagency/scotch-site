@@ -12,6 +12,7 @@ import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
 import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
 import proj6 from "../../public/images/projects/devdreaming.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
+import { decodeHTML } from "../../decodeHTML";
 
 const FramerImage = motion(Image);
 
@@ -19,32 +20,30 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
   return (
     <article
-  className="relative flex w-full items-center justify-between rounded-sm border
-  border-solid border-dark bg-light p-12 dark:border-light dark:bg-dark lg:flex-col 
-  lg:p-8 xs:p-4"
->
-
-
+      className="relative flex w-full items-center justify-between rounded-sm border
+      border-solid border-dark bg-light p-12 dark:border-light dark:bg-dark lg:flex-col 
+      lg:p-8 xs:p-4"
+    >
       <Link
         href={link}
         target={"_blank"}
         className="w-1/2 cursor-pointer overflow-hidden rounded-sm lg:w-full"
-              >
+      >
         <FramerImage
           src={img}
           className="h-auto w-full"
-          alt={title}
+          alt={decodeHTML(title)}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+                  (max-width: 1200px) 50vw,
+                  33vw"
           priority
         />
       </Link>
       <div className="flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
         <span className="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
-          {type}
+          {decodeHTML(type)}
         </span>
         <Link
           href={link}
@@ -52,11 +51,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           className="underline-offset-2 hover:underline"
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">
-            {title}
+            {decodeHTML(title)}
           </h2>
         </Link>
         <p className=" my-2 rounded-sm font-medium text-dark dark:text-light sm:text-sm">
-          {summary}
+          {decodeHTML(summary)}
         </p>
         <div className="mt-2 flex items-center">
           <Link
@@ -66,9 +65,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
              bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark 
              sm:px-4 sm:text-base
             "
-            aria-label="Crypto Screener Application"
+            aria-label={decodeHTML(title)}
           >
-            Visit Project
+            {decodeHTML("Visit Project")}
           </Link>
         </div>
       </div>
@@ -80,11 +79,9 @@ const Project = ({ title, type, img, link, github }) => {
 
   return (
     <article
-  className="relative flex w-full flex-col items-center justify-center rounded-sm 
-  border border-solid border-dark bg-light p-6 dark:border-light dark:bg-dark xs:p-4"
->
-
-
+      className="relative flex w-full flex-col items-center justify-center rounded-sm 
+      border border-solid border-dark bg-light p-6 dark:border-light dark:bg-dark xs:p-4"
+    >
       <Link
         href={link}
         target={"_blank"}
@@ -92,18 +89,18 @@ const Project = ({ title, type, img, link, github }) => {
       >
         <FramerImage
           src={img}
-          alt={title}
+          alt={decodeHTML(title)}
           className="h-auto w-full"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+                  (max-width: 1200px) 50vw,
+                  33vw"
         />
       </Link>
       <div className="mt-4 flex w-full flex-col items-start justify-between">
         <span className="text-xl font-medium text-primary dark:text-primaryDark lg:text-lg md:text-base">
-          {type}
+          {decodeHTML(type)}
         </span>
 
         <Link
@@ -112,7 +109,7 @@ const Project = ({ title, type, img, link, github }) => {
           className="underline-offset-2 hover:underline"
         >
           <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl ">
-            {title}
+            {decodeHTML(title)}
           </h2>
         </Link>
         <div className="flex w-full items-center  justify-between">
@@ -122,9 +119,9 @@ const Project = ({ title, type, img, link, github }) => {
             className="rounded-sm text-lg
             font-medium underline md:text-base
             "
-            aria-label={title}
+            aria-label={decodeHTML(title)}
           >
-            Visit
+            {decodeHTML("Visit")}
           </Link>
         </div>
       </div>
@@ -136,29 +133,26 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Modern Portfolio Built with Nextjs | Projects Page</title>
+        <title>{decodeHTML("Modern Portfolio Built with Nextjs | Projects Page")}</title>
         <meta
           name="description"
-          content="Discover the latest webapp projects created by CodeBucks, a Next.js developer with 
-        expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio."
+          content={decodeHTML("Discover the latest webapp projects created by CodeBucks, a Next.js developer with expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio.")}
         />
       </Head>
 
       <TransitionEffect />
-      <main
-        className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}
-      >
+      <main className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}>
         <Layout className="pt-16">
           <AnimatedText
-            text="Case Studies"
+            text={decodeHTML("Case Studies")}
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="From Crisis to Comeback"
-                summary="A natural cancer clinic went from near-bankruptcy to $3.6M revenue in one year. Our digital transformation turned 1,875 annual treatments into 9,000, helping achieve 80% patient remission rates. See how we made it happen."
+                type={decodeHTML("Featured Project")}
+                title={decodeHTML("From Crisis to Comeback")}
+                summary={decodeHTML("A natural cancer clinic went from near-bankruptcy to $3.6M revenue in one year. Our digital transformation turned 1,875 annual treatments into 9,000, helping achieve 80% patient remission rates. See how we made it happen.")}
                 img={proj1}
                 link="/dying-cancer-clinic-revival"
               />
@@ -166,42 +160,22 @@ export default function Projects() {
             
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Scaling Solar Success"
-                summary="Delivering over 180 qualified solar leads in 3 months, we helped transform a solar company&#s reach. Result? $480K in new revenue, 5x more closed deals, and hundreds more families saving 30-50% on energy bills."
+                type={decodeHTML("Featured Project")}
+                title={decodeHTML("Scaling Solar Success")}
+                summary={decodeHTML("Delivering over 180 qualified solar leads in 3 months, we helped transform a solar company&#8217;s reach. Result? $480K in new revenue, 5x more closed deals, and hundreds more families saving 30-50% on energy bills.")}
                 img={proj4}
                 link="/scaling-success"
               />
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="Million Dollar Product"
-                summary="From garage prototype to $1.1M in sales: See how we transformed a golf training aid into a Golf Channel sensation. With PGA Tour pro backing and strategic marketing, this startup&#s journey shows what&#s possible with the right plan."
+                type={decodeHTML("Featured Project")}
+                title={decodeHTML("Million Dollar Product")}
+                summary={decodeHTML("From garage prototype to $1.1M in sales: See how we transformed a golf training aid into a Golf Channel sensation. With PGA Tour pro backing and strategic marketing, this startup&#8217;s journey shows what&#8217;s possible with the right plan.")}
                 img={proj4}
                 link="/garage-to-golf-channel-success"
               />
             </div>
-          {/*
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Website Template"
-                img={proj5}
-                title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-                github="https://github.com/codebucks27/wibe-studio"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Blog Website"
-                img={proj6}
-                title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
-              />
-            </div>
-          */}
           </div>
         </Layout>
       </main>
