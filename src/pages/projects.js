@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-import proj2 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
-import proj3 from "../../public/images/projects/fashion-studio-website.jpg";
-import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
-import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
-import proj6 from "../../public/images/projects/devdreaming.jpg";
+import proj1 from "../../public/images/projects/natural-treatments.png";
+import proj2 from "../../public/images/projects/solar-success.png";
+import proj3 from "../../public/images/projects/garage-golfchannel.png";
+//import proj4 from "../../public/images/projects/portfolio-cover-image.jpg";
+//import proj5 from "../../public/images/projects/agency-website-cover-image.jpg";
+//import proj6 from "../../public/images/projects/devdreaming.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 import { decodeHTML } from "../../decodeHTML";
 
@@ -163,7 +163,7 @@ export default function Projects() {
                 type={decodeHTML("Featured Project")}
                 title={decodeHTML("Scaling Solar Success")}
                 summary={decodeHTML("Delivering over 180 qualified solar leads in 3 months, we helped transform a solar company&#8217;s reach. Result? $480K in new revenue, 5x more closed deals, and hundreds more families saving 30-50% on energy bills.")}
-                img={proj4}
+                img={proj2}
                 link="/scaling-success"
               />
             </div>
@@ -172,7 +172,7 @@ export default function Projects() {
                 type={decodeHTML("Featured Project")}
                 title={decodeHTML("Million Dollar Product")}
                 summary={decodeHTML("From garage prototype to $1.1M in sales: See how we transformed a golf training aid into a Golf Channel sensation. With PGA Tour pro backing and strategic marketing, this startup&#8217;s journey shows what&#8217;s possible with the right plan.")}
-                img={proj4}
+                img={proj3}
                 link="/garage-to-golf-channel-success"
               />
             </div>

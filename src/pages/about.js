@@ -7,6 +7,7 @@ import { useEffect, useRef } from "react";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 import { decodeHTML } from "../../decodeHTML";
+import Link from 'next/link';
 
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);
@@ -203,12 +204,12 @@ export default function About() {
             </p>
 
             <p className="mb-6 text-lg leading-relaxed text-center">
-              <a
-                href="/contact"
-                className="inline-block bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-dark transition duration-300"
+            <Link href="/booking" passHref>
+              <a className="inline-block bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-dark transition duration-300"
               >
                 SCHEDULE YOUR FREE MARKETING REVIEW
               </a>
+            </Link>
             </p>
 
             <div className="flex justify-between mt-12 text-center gap-4 flex-wrap">
