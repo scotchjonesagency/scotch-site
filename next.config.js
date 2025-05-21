@@ -25,6 +25,29 @@ const nextConfig = {
       // Enable module scope hoisting
       config.optimization.usedExports = true;
       config.optimization.providedExports = true;
+
+      // Configure Terser to avoid polyfills for modern browsers
+      if (config.optimization.minimizer) {
+        config.optimization.minimizer.forEach((minimizer) => {
+          if (minimizer.constructor.name === 'TerserPlugin') {
+            minimizer.options.terserOptions = {
+              ...minimizer.options.terserOptions,
+              ecma: 2020,
+              module: true,
+              toplevel: true,
+              compress: {
+                ecma: 2020,
+                module: true,
+                toplevel: true,
+                passes: 2,
+              },
+              mangle: {
+                module: true,
+              },
+            };
+          }
+        });
+      }
     }
     return config;
   }
