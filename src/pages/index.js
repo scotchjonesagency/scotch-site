@@ -33,8 +33,10 @@ export default function Home() {
         src={profilePic}
         alt="Scotch Jones"
         className="h-auto w-full"
-        sizes="100vw"
+        sizes="(max-width: 768px) 100vw, 50vw"
         priority
+        fetchpriority="high"
+        quality={100}
       />
     </div>
 
