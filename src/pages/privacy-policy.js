@@ -1,6 +1,6 @@
 ﻿import LegalPage from "@/components/LegalPage";
 
-const COMPANY = "Scotch Jones Marketing Agency";
+const COMPANY = "Scotch Jones LLC";
 const EMAIL = "nick@scotchjones.com";
 const SITE = "scotchjones.com";
 
@@ -121,6 +121,12 @@ export default function PrivacyPolicy() {
       <h2>Contact us</h2>
       <p>
         {COMPANY}
+        <br />
+        116 Agnes St, Ste 200
+        <br />
+        Knoxville, TN 37919
+        <br />
+        Phone: <a href="tel:+14236418246">(423) 641-8246</a>
         <br />
         Email: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
       </p>
