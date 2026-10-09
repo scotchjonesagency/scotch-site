@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import LegalPage from "@/components/LegalPage";
 
 const COMPANY = "Scotch Jones Marketing Agency";
@@ -15,9 +15,9 @@ export default function TermsOfService() {
       updated="October 9, 2026"
     >
       <p>
-        These Terms of Service ("Terms") govern your use of {SITE} and any
-        related chat, booking, and communication tools (together, the "Site")
-        operated by {COMPANY} ("we," "us," or "our"). By using the Site you
+        These Terms of Service (&ldquo;Terms&rdquo;) govern your use of {SITE} and any
+        related chat, booking, and communication tools (together, the &ldquo;Site&rdquo;)
+        operated by {COMPANY} (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). By using the Site you
         agree to these Terms. If you do not agree, please do not use the Site.
       </p>
 
@@ -65,7 +65,7 @@ export default function TermsOfService() {
 
       <h2>Disclaimer of warranties</h2>
       <p>
-        The Site is provided "as is" and "as available," without warranties of
+        The Site is provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; without warranties of
         any kind, express or implied, including warranties of merchantability,
         fitness for a particular purpose, and non-infringement. We do not
         warrant that the Site will be uninterrupted or error-free.

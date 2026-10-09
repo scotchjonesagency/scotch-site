@@ -1,4 +1,4 @@
-import LegalPage from "@/components/LegalPage";
+﻿import LegalPage from "@/components/LegalPage";
 
 const COMPANY = "Scotch Jones Marketing Agency";
 const EMAIL = "nick@scotchjones.com";
@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       updated="October 9, 2026"
     >
       <p>
-        This Privacy Policy explains how {COMPANY} ("we," "us," or "our")
+        This Privacy Policy explains how {COMPANY} (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
         collects, uses, and shares information when you visit {SITE}, use our
         chat widget, book a call, or otherwise communicate with us.
       </p>
@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
           <strong>Technical information:</strong> basic data sent by your
           browser or device, such as IP address, browser type, pages visited,
           and the date and time of your visit, collected through our hosting
-          provider's logs and the cookies or similar technologies used by the
+          provider&rsquo;s logs and the cookies or similar technologies used by the
           services described below.
         </li>
       </ul>
@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
 
       <h2>Changes to this policy</h2>
       <p>
-        We may update this policy from time to time. The "Last updated" date at
+        We may update this policy from time to time. The &ldquo;Last updated&rdquo; date at
         the top shows when it was last changed.
       </p>
 
