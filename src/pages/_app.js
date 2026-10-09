@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Script from "next/script";
 
 // If loading a variable font, you don't need to specify the font weight
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
@@ -36,6 +37,13 @@ export default function App({ Component, pageProps }) {
         </AnimatePresence>
         <Footer />
       </main>
+      <Script
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="6ac849ebd5ad0abc1274af3b"
+        data-source="WEB_USER"
+        strategy="afterInteractive"
+      />
     </>
   );
 }
