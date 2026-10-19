@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
     <LegalPage
       title="Privacy Policy"
       description="How Scotch Jones Conversion Company collects, uses, and protects your information."
-      updated="October 9, 2026"
+      updated="October 19, 2026"
     >
       <p>
         This Privacy Policy explains how {COMPANY} (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
@@ -69,6 +69,12 @@ export default function PrivacyPolicy() {
         <li>LeadConnector / HighLevel, which powers our chat widget, CRM, text messaging, and email.</li>
         <li>Calendly, which handles call scheduling.</li>
         <li>Vercel, which hosts this website.</li>
+        <li>Google Analytics, which measures how visitors use this website.</li>
+        <li>
+          Microsoft Clarity, which records how visitors interact with this
+          website (such as clicks, scrolling, and mouse movement) to help us
+          improve it.
+        </li>
       </ul>
       <p>
         We may also disclose information if required by law, to protect our
@@ -80,8 +86,23 @@ export default function PrivacyPolicy() {
       <p>
         Our website and the services above may use cookies or similar
         technologies to make the site and chat widget work and to understand
-        how they are used. You can control cookies through your browser
-        settings, though some features may not work if you block them.
+        how they are used. We use Google Analytics and Microsoft Clarity to
+        understand how visitors find and use our site so we can improve it.
+        Microsoft and Google may use this data as described in the{" "}
+        <a href="https://www.microsoft.com/privacy/privacystatement">
+          Microsoft Privacy Statement
+        </a>{" "}
+        and{" "}
+        <a href="https://policies.google.com/technologies/partner-sites">
+          How Google uses information from sites that use its services
+        </a>
+        . You can control cookies through your browser settings, though some
+        features may not work if you block them. You can also opt out of
+        Google Analytics with the{" "}
+        <a href="https://tools.google.com/dlpage/gaoptout">
+          Google Analytics opt-out browser add-on
+        </a>
+        .
       </p>
 
       <h2>How long we keep information</h2>
