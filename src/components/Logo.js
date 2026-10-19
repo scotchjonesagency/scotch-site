@@ -10,11 +10,11 @@ const Logo = () => {
     <div className="relative mt-10 sm:mt-10 md:mt-10 w-[50%] max-w-[250px] min-w-[100px] h-[100px]">
   <MotionLink href="/" className="block" whileHover={{ scale: 1.05 }}>
     <Image
-      src="/images/svgs/ScotchJonesLogoOfficial.svg"
-      alt="Scotch Jones Logo"
-      width={250}
-      height={100}
-      className="object-contain"
+      src="/images/scotch-jones-company-logo.png"
+      alt="Scotch Jones Company Logo"
+      width={1280}
+      height={365}
+      className="object-contain w-full h-auto"
       priority
     />
   </MotionLink>

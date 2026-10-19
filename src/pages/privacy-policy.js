@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
   return (
     <LegalPage
       title="Privacy Policy"
-      description="How Scotch Jones Marketing Agency collects, uses, and protects your information."
+      description="How Scotch Jones Conversion Company collects, uses, and protects your information."
       updated="October 9, 2026"
     >
       <p>

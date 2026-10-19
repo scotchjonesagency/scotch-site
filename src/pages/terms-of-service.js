@@ -10,7 +10,7 @@ export default function TermsOfService() {
   return (
     <LegalPage
       title="Terms of Service"
-      description="The terms that apply when you use the Scotch Jones Marketing Agency website."
+      description="The terms that apply when you use the Scotch Jones Conversion Company website."
       updated="October 9, 2026"
     >
       <p>

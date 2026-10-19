@@ -6,8 +6,8 @@ export default function Booking() {
   return (
     <>
       <Head>
-        <title>Book a Call | Scotch Jones Agency</title>
-        <meta name="description" content="Schedule your free consultation with Scotch Jones Marketing Agency." />
+        <title>Book a Call | Scotch Jones Company</title>
+        <meta name="description" content="Schedule your free consultation with Scotch Jones Conversion Company." />
       </Head>
 
       <Layout className="flex flex-col items-center justify-center min-h-screen p-4">

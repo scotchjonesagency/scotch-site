@@ -14,10 +14,10 @@ export default function Home() {
     <>
       <Head>
       <link rel="manifest" href="/site.webmanifest.json" />
-        <title>The Scotch Jones Marketing Agency</title>
+        <title>The Scotch Jones Conversion Company</title>
         <meta
           name="description"
-          content="The Scotch Jones Agency is the premiere marketing agency
+          content="Scotch Jones Company is the premiere conversion company
           for small business owners. We help small business grow."
         />
       </Head>
@@ -50,7 +50,7 @@ export default function Home() {
         className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
       />
       <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-        The Scotch Jones Agency has engineered $12.8M in client revenue through our proven growth system. While others promise leads, we deliver complete customer acquisition that transforms your marketing spend into predictable, sustainable growth. 
+        Scotch Jones Company has engineered $12.8M in client revenue through our proven growth system. While others promise leads, we deliver complete customer acquisition that transforms your marketing spend into predictable, sustainable growth. 
       </p>
       <div className="mt-2 flex items-center self-start lg:self-center">
         <Link

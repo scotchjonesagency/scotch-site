@@ -5,7 +5,7 @@ export default function LegalPage({ title, description, updated, children }) {
   return (
     <>
       <Head>
-        <title>{`${title} | Scotch Jones Agency`}</title>
+        <title>{`${title} | Scotch Jones Company`}</title>
         <meta name="description" content={description} />
       </Head>
 
