@@ -6,6 +6,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 
 // Where "Buy the research" sends the reader (the short application).
 const BUY_URL = "#buy";
+const SIGN_UP_URL = "/booking";
 
 const P = ({ children }) => (
   <p className="mb-6 text-lg leading-relaxed text-dark dark:text-light">{children}</p>
@@ -34,12 +35,18 @@ const Product = ({ name, price, children }) => (
   </div>
 );
 
+const BUTTON_CLASS =
+  "inline-block rounded-lg border-2 border-solid border-dark bg-dark px-8 py-3 text-lg font-semibold text-light hover:bg-light hover:text-dark dark:border-light dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light";
+
 const BuyButton = () => (
-  <a
-    href={BUY_URL}
-    className="inline-block rounded-lg border-2 border-solid border-dark bg-dark px-8 py-3 text-lg font-semibold text-light hover:bg-light hover:text-dark dark:border-light dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
-  >
+  <a href={BUY_URL} className={BUTTON_CLASS}>
     Buy the research
+  </a>
+);
+
+const SignUpButton = () => (
+  <a href={SIGN_UP_URL} className={BUTTON_CLASS}>
+    Sign me up
   </a>
 );
 
@@ -230,10 +237,13 @@ export default function Research() {
                 The Scotch Jones Conversion Company
               </P>
               <P>
-                P.S. You may have missed it, but if you sign up for my Free 7 Day working interview, the Waitlist
-                Groundwork is free. And if you become a client I send you a copy of the Waitlist Blueprint as a thank you
-                for signing up.
+                P.S. You may have missed it, but if you sign up for the Free 7 Day working interview, the Waitlist
+                Groundwork is free. And if you become a client I send you a copy of the Waitlist Blueprint, the one I
+                charge $5,750 for, as a thank you for signing up.
               </P>
+              <div className="my-10 text-center">
+                <SignUpButton />
+              </div>
             </section>
           </article>
         </Layout>
