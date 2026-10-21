@@ -31,7 +31,7 @@ const Product = ({ name, price, children }) => (
   <div className="flex flex-col rounded-lg border-2 border-solid border-dark p-6 dark:border-light">
     <h3 className="mb-2 text-xl font-bold text-dark dark:text-light">{name}</h3>
     <p className="mb-4 text-2xl font-bold text-primary dark:text-light">{price}</p>
-    <p className="text-lg leading-relaxed text-dark dark:text-light">{children}</p>
+    <div className="text-lg leading-relaxed text-dark dark:text-light">{children}</div>
   </div>
 );
 
@@ -54,7 +54,7 @@ export default function Research() {
   useEffect(() => {
     if (typeof window !== "undefined" && typeof window.clarity === "function") {
       window.clarity("set", "player", "site");
-      window.clarity("set", "page_version", "rp-v0.3");
+      window.clarity("set", "page_version", "rp-v0.4");
       window.clarity("set", "structure", "spin-8");
     }
   }, []);
@@ -191,12 +191,28 @@ export default function Research() {
                   afterwards. No analysis. You read it and draw your own conclusions.
                 </Product>
                 <Product
-                  name="The Waitlist Blueprint: Patient Research for Your Cash-Pay Fatigue Program"
+                  name="The Waitlist Blueprint: Patient Research &amp; Insights for Your Cash-Pay Fatigue Program"
                   price="$5,750"
                 >
-                  Everything in the Groundwork, plus the research on your clinic: your patients, your competitors&#8217;
-                  patients, your area. Then what it means: the objections your ads must answer, the words to use and
-                  avoid, and what patients say right before they book.
+                  <p className="mb-3">Everything in the Groundwork, plus:</p>
+                  <ul className="list-disc space-y-2 pl-5">
+                    <li>
+                      The three things your patients are really paying for. It isn&#8217;t the labs or the protocol.
+                      It&#8217;s what they were looking for before they ever found you, and it&#8217;s what every ad and
+                      page I write for you is built around.
+                    </li>
+                    <li>Research on your clinic: your patients, your competitors&#8217; patients, your area.</li>
+                    <li>
+                      What it means: why your patients chose you, why others in your area went somewhere else, and
+                      where your clinic stands next to them, in patients&#8217; own words.
+                    </li>
+                    <li>
+                      Why patients don&#8217;t book: the doubts that stop them, and the answer each one needs before
+                      they&#8217;ll pick up the phone or fill out a form.
+                    </li>
+                    <li>The words to use and avoid, and what patients say right before they book.</li>
+                    <li>What your competitors&#8217; ads say, and what they leave out.</li>
+                  </ul>
                 </Product>
               </div>
 
