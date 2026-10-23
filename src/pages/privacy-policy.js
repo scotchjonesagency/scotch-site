@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
     <LegalPage
       title="Privacy Policy"
       description="How Scotch Jones Conversion Company collects, uses, and protects your information."
-      updated="October 19, 2026"
+      updated="October 23, 2026"
     >
       <p>
         This Privacy Policy explains how {COMPANY} (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
         <li>
           <strong>Booking information:</strong> when you schedule a call, the
           details you enter (such as name, email, and time) are collected by our
-          scheduling provider, Calendly.
+          scheduling provider, LeadConnector / HighLevel.
         </li>
         <li>
           <strong>Technical information:</strong> basic data sent by your
@@ -66,8 +66,7 @@ export default function PrivacyPolicy() {
         business, and only as needed for them to do so. These include:
       </p>
       <ul>
-        <li>LeadConnector / HighLevel, which powers our chat widget, CRM, text messaging, and email.</li>
-        <li>Calendly, which handles call scheduling.</li>
+        <li>LeadConnector / HighLevel, which powers our chat widget, call scheduling, CRM, text messaging, and email.</li>
         <li>Vercel, which hosts this website.</li>
         <li>Google Analytics, which measures how visitors use this website.</li>
         <li>

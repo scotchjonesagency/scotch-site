@@ -1,5 +1,6 @@
 // pages/booking.js
 import Head from "next/head";
+import Script from "next/script";
 import Layout from "@/components/Layout";
 
 export default function Booking() {
@@ -15,17 +16,18 @@ export default function Booking() {
           Book Your Free Consultation
         </h1>
 
-        <div className="w-full max-w-3xl h-[700px]">
+        <div className="w-full max-w-3xl min-h-[700px]">
           <iframe
-            src="https://calendly.com/nick-scotchjones/30min" // Replace with your Calendly link
-            width="100%"
-            height="100%"
-            frameBorder="0"
+            src="https://api.leadconnectorhq.com/widget/booking/kWUoOrwI4OTn1Dx9Fd9D"
+            id="kWUoOrwI4OTn1Dx9Fd9D_booking"
+            title="Book a call"
+            scrolling="no"
+            style={{ width: "100%", minHeight: "700px", border: "none", overflow: "hidden" }}
             className="rounded-lg shadow-md"
-            allowFullScreen
           ></iframe>
         </div>
       </Layout>
+      <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="afterInteractive" />
     </>
   );
 }

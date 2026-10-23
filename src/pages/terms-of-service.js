@@ -57,7 +57,7 @@ export default function TermsOfService() {
 
       <h2>Third-party services</h2>
       <p>
-        The Site uses third-party tools such as Calendly and LeadConnector /
+        The Site uses third-party tools such as LeadConnector /
         HighLevel. Their use is subject to their own terms and privacy
         policies, and we are not responsible for them.
       </p>
