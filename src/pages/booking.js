@@ -12,10 +12,6 @@ export default function Booking() {
       </Head>
 
       <Layout className="flex flex-col items-center justify-center min-h-screen p-4">
-        <h1 className="text-4xl font-bold mb-8 text-center">
-          Book Your Free Consultation
-        </h1>
-
         <div className="w-full max-w-3xl min-h-[700px]">
           <iframe
             src="https://api.leadconnectorhq.com/widget/booking/kWUoOrwI4OTn1Dx9Fd9D"
